@@ -1,0 +1,19 @@
+title: Docker Fundamentals
+description: >-
+  This course explains how to use Docker for running containerized applications.
+  Attendees learn to configure Docker, build optimized Dockerfiles, and use
+  tools like Docker Compose and Swarm.
+template:
+  repo: docker-fundamentals-template
+  name: docker-fundamentals
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
